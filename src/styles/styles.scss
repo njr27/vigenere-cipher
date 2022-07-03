@@ -1,0 +1,100 @@
+@import "./reset";
+
+.body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0d0d0d;
+
+    &__title {
+        margin-bottom: 70px;
+        font-size: 96px;
+        text-transform: capitalize;
+        text-shadow: 0px 8px 10px #5d984f;
+        color: white;
+
+        &:hover {
+            -webkit-text-stroke-width: 3px;
+            -webkit-text-stroke-color: #ffffff;
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+
+        &-img {
+            width: 400px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 20px 3px #5d984f;
+        }
+
+        &-field-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 20px;
+
+            &--input {
+                width: 500px;
+                height: 70px;
+                color: #0e0e0e;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                border: none;
+                border-radius: 3px;
+                text-shadow: 0px 0px 3px #336825;
+                &:hover {
+                    box-shadow: 0px 0px 3px #ffffff;
+
+                }
+            }
+
+            &--label {
+                margin-bottom: 10px;
+                text-shadow: 0px 1px 5px #5d984f;
+
+                &:hover {
+                    transform: scaleX(1.03);                    
+                }
+            }
+
+            &.key {
+                width: 500px;
+                height: 50px;
+            }
+        }
+    }
+
+    &__content-wrapper {
+        margin-left: 50px;
+
+        &.button {
+            color: #000000;
+            margin-left: 0px;
+            width: 100%;
+            background-color: #336825;
+            border-radius: 20px;
+            border: none;
+            margin: 30px 0;
+            padding: 10px;
+            font-size: 24px;
+            text-shadow: 0px 1px 5px black;
+
+            &:hover {
+                text-shadow: 0px 0px 1px black;
+                box-shadow: 0px 0px 8px #5d984f;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: #000000;
+            }
+        }
+    }
+}
